@@ -1,62 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com Menu e Foto</title>
+    <title>Pagina com menu e foto</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho com o menu -->
-    <header>
-        <table>
-            <tr>
-                <td><a href="D:\Front_end_noturo\index.html">Home</a></td>
-                <td><a href="#sobre">Sobre</a></td>
-                <td><a href="#servicos">Serviços</a></td>
-                <td><a href="D:\Front_end_noturo\index.html">Contato</a></td>
-                <td><a href="#blog">Blog</a></td>
-            </tr>
-        </table>
+    <header class="exemplo">
+        <h1>Pagina com menu e foto</h1>
     </header>
-
-    <!-- Seção da foto principal -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="#blog">Blog</a>
+    </nav>
     <main>
-        <section style="width: 100%; height: 400px; overflow: hidden;">
-            <img src="C:\Users\SENAC\Downloads\medicos.jpg" alt="Descrição da Imagem" width="600">
-        </section>
-
-
-        <article>
-            <h1>Como Aprender HTML e CSS</h1>
-            <p>HTML e CSS são as linguagens fundamentais para a criação de páginas web. Neste artigo, vamos explorar as melhores práticas e recursos para começar a aprender essas tecnologias.</p>
-            
-            <!-- Exemplo de uso de <aside> -->
-            <aside>
-                <img src="https://media.baamboozle.com/uploads/images/145866/1613735881_243735.jpeg" alt="Exemplo de Imagem" width="300">
-                <p>Confira este livro recomendando para aprender HTML e CSS de forma rápida e prática!</p>
-            </aside>
-            
-            <p>Para se aprofundar, você pode começar estudando HTML e CSS com tutoriais online, livros, e cursos especializados. Continue praticando para aprimorar suas habilidades.</p>
-        </article>
-
-        <section>
-            <h3>
-                Envie sua mensagem:
-            </h3>
-        </section>
-        <form action="" method="get">
-            <label for="nome">Nome: </label>
-            <input type="text" id="name" name="name">
-            <br>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email">
-            <br><br>
-            <label for="message">Sua Mensagem: </label>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="4"></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
+        <figure class="main">
+            <img src="https://fcmsantacasasp.edu.br/blog/wp-content/uploads/2022/03/especialista-ou-generalista.jpg" height="100%" width="100%" alt="medicos">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur qui expedita. Illum nostrum in tenetur officia sapiente, quisquam perspiciatis dignissimos eveniet rem. Cumque quaerat quasi aliquid adipisci quae iste!</figcaption>
+        </figure>
     </main>
+
+
+    <h1 class="contato"> Agende sua consulta </h1>
+
+    <div class="container2">
+            <div class="col-sm-6">
+                <h2>Nossa equipe é de primeira</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur qui expedita. Illum nostrum in tenetur officia sapiente, quisquam perspiciatis dignissimos eveniet rem. Cumque quaerat quasi aliquid adipisci quae iste!</p>
+            </div>
+            <div class="col-sm-6">
+                <h1>Formulário de Contato</h1>
+                    <form action="/submit" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <br><br>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br><br>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                        <br><br>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea></textarea>
+                        <br><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+            </div>
+    </div>
+
+        <div class="container">
+            
+                <div class="card1">
+                    <figure>
+                        <img src="https://fcmsantacasasp.edu.br/blog/wp-content/uploads/2022/03/especialista-ou-generalista.jpg" height="200" width="300" alt="medicos">
+                        <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                    </figure>
+                    <br>
+                    <h3>Isso é teste de card</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown 
+                        printer took a galley of type and scrambled it to make a 
+                        type specimen book.</p>
+                    <button>Clique aqui</button>
+                </div><br>
+                <div class="card2">
+
+                    <figure>
+                        <img src="https://fcmsantacasasp.edu.br/blog/wp-content/uploads/2022/03/especialista-ou-generalista.jpg" height="200" width="300" alt="medicos">
+                        <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                    </figure>
+                    <br>
+                    <h3>Isso é teste de card</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown 
+                        printer took a galley of type and scrambled it to make a 
+                        type specimen book.</p>
+                    <button>Clique aqui</button>
+                </div><br>
+                <div class="card3">
+
+
+                    <figure>
+                        <img src="https://fcmsantacasasp.edu.br/blog/wp-content/uploads/2022/03/especialista-ou-generalista.jpg" height="200" width="300" alt="medicos">
+                        <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                    </figure>
+                    <br>
+                    <h3>Isso é teste de card</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown 
+                        printer took a galley of type and scrambled it to make a 
+                        type specimen book.</p>
+                    <button>Clique aqui</button>
+                </div><br>
+            </div>
+        </div>
+    
+    <footer>
+        <p>&copy; 2024 Informações do site. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

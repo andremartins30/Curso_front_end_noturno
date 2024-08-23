@@ -1,55 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com Menu e Foto</title>
-    <style>
-        body{
-            margin-left: 100px;
-            margin-right: 100px;
-            background-color: #f0f0f0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 30px;
-            position: center;
-        }
-    </style>
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-    <body>
-        <header>
-            <table>
-                <tr>
-                    <td><a href="D:\Front_end_noturo\index.html">Home</a></td>
-                    <td><a href="#sobre">Sobre</a></td>
-                    <td><a href="#servicos">Serviços</a></td>
-                    <td><a href="D:\Front_end_noturo\index.html">Contato</a></td>
-                    <td><a href="#blog">Blog</a></td>
-                </tr>
-            </table>
-        </header>
-        <main>
+<body>
+    <header>
+        <h1>Pagina com menu e foto</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="#blog">Blog</a>
+    </nav>
+    <form action="">
+        <center>
+            <figure>
+                <img src="https://lh5.googleusercontent.com/proxy/e24SkSFFtYIvfnS3RQQSpxvM4OG-s-VJjhNP1IUlg_Spj7O0Ht9GN2qciLL1AG31YMJSK3yM7vrDGA_JwNZM8GOl7IADg4fyMM26kIj4PUb8-6YbtA_CiHw6OdXK" height="200" width="300" alt="medicos">
+                <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur qui expedita. Illum nostrum in tenetur officia sapiente, quisquam perspiciatis dignissimos eveniet rem. Cumque quaerat quasi aliquid adipisci quae iste!</figcaption>
+            </figure>
+        
+            <h2>Entre em contato</h2>
+        </center>
+        <form action="#" method="get">
+            <div>
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="name" placeholder="Digite o nome completo" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="Digite o seu melhor email" required>
+            </div>
+            <div>
+                <label for="message">Mensagem: </label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
 
-
-            <h1>Contato:</h1>
-                <aside>
-                    <img src="https://conteudo.imguol.com.br/c/noticias/60/2022/02/18/medico-consulta-medica-medicina-1645189373419_v2_4x3.jpg" alt="Exemplo de Imagem" width="300">
-                </aside>
-            <form action="" method="get">
-                
-                <label>Nome</label>
-                <input type="text" id="name" name="name">
-                
-                <label>Telefone</label>
-                <input type="phone" id="phone" name="phone">
-                
-                <label>Email</label>
-                <input type="email" id="email" name="email">
-                
-                <label>Mensagem</label>
-                <textarea name="message" id="message" cols="30" rows="4"></textarea>
-                
+            <div>
                 <button type="submit">Enviar</button>
-            </form>
-        </main>
-    </body>
+            </div>
+        </form>
+    </form>
+</body>
 </html>
